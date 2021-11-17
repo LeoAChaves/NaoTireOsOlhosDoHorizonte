@@ -53,7 +53,6 @@ main {
     color: black;
 }
 .botoes p {
-    border: rgba(0, 0, 0, 0) 3px dashed;
     background-color: rgba(221, 180, 127, 0.767);
     border: rgb(0, 0, 0) 3px dashed;
     border-radius: 10px;
@@ -78,4 +77,24 @@ footer a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+@media (max-width: 760px){
+    .personagemInfo {
+        height: auto;
+    }
+}
+
+@media (max-width: 540px){
+    h1 {
+        font-size: 20px;
+    }
+    .botoes p {
+        padding: 2px;
+    }
+}
+@media (max-width: 500px){
+    body {
+        height: 200%;
+    }
 }
