@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("./Images/background.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Bubblegum Sans', cursive;
+    align-items: center;
+}
+body:hover {
+    cursor: default;
+}
+h1 {
+    font-family: 'Stalinist One', cursive;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.personagemInfo {
+    width: 60%;
+    height: 300px;
+    background-color: rgba(221, 180, 127, 0.767);
+    border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 20px;
+    padding: 20px;
+}
+.personagemInfo img {
+    float: left;
+    width: 30%;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+.personagemInfo p {
+    font-size: 20px;
+}
+.botoes {
+    clear: left;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.botoes a {
+    text-decoration: none;
+    color: black;
+}
+.botoes p {
+    border: rgba(0, 0, 0, 0) 3px dashed;
+    background-color: rgba(221, 180, 127, 0.767);
+    border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 1s;
+}
+.voltar:hover {
+    background-color: rgba(255, 99, 71, 0.767);
+}
+.iniciar:hover {
+    background-color: rgba(34, 139, 34, 0.767);
+}
+footer {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
