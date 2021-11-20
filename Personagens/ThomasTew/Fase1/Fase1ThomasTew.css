@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../../../Images/background.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Bubblegum Sans', cursive;
+    align-items: center;
+}
+body:hover {
+    cursor: default;
+}
+
+.introFase1 {
+    margin: 50px;
+    width: 60%;
+    background-color: rgba(221, 180, 127, 0.767);
+    border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 20px;
+    padding: 20px;
+}
+.introFase1 img {
+    height: 220px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.introFase1{
+    font-size: 22px;
+}
+
+.poema { 
+    font-family: 'Estonia', cursive;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    background: radial-gradient(circle, rgba(226,233,148,0.90) 0%, rgba(251,167,62,0.90) 100%);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.dialogo {
+    margin: 50px;
+    width: 60%;
+    background-color: rgba(221, 180, 127, 0.767);
+    border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+.dialogo img {
+    height: 100px;
+    float: right;
+    border-radius: 20px;
+}
+.dialogo button {
+    font-family: 'Bubblegum Sans', cursive;
+    background: radial-gradient(circle, rgba(226,233,148,0.90) 0%, rgba(251,167,62,0.90) 100%);
+    border:rgb(0, 0, 0) solid;
+    padding: 10px;
+    font-size: 20px;
+}
+.botoes {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.responder{
+    transition: all 0.5s;
+}
+.responder:hover {
+   color: green;
+   border-color: green;
+}
+.dica {
+    transition: all 0.5s;
+}
+.dica:hover {
+    color: bisque;
+    border-color: bisque;
+}
+
+/* .introFase1:hover #dica {
+    color: red;
+}
+.poema:hover #dica {
+    color: red;
+} */
+#dica:hover {
+    color: red;
+    cursor: crosshair;
+}

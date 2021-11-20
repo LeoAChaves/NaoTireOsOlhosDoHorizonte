@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("./Images/background.jpg");
+    background-image: url("../Images/background.jpg");
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,6 +17,8 @@ body:hover {
 }
 h1 {
     font-family: 'Stalinist One', cursive;
+    font-size: 28px;
+    text-align: center;
 }
 main {
     display: flex;

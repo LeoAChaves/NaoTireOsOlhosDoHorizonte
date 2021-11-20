@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-image: url("./Images/background.jpg");
     display: flex;
@@ -11,7 +10,6 @@ body {
     justify-content: space-between;
     height: 100vh;
     font-family: 'Bubblegum Sans', cursive;
-    /* font-family: 'Stalinist One', cursive; */
 }
 body:hover {
     cursor: default;
@@ -53,11 +51,12 @@ h4 {
     font-size: 25px;
     padding: 15px 10px;
     border: rgba(0, 0, 0, 0) 3px dashed;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: all 1s;
 }
 .personagens li:hover {
     border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 20px;
     background-color: rgba(221, 180, 127, 0.767);
     transition: 2s;
 }
@@ -77,4 +76,32 @@ footer a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+@media (max-width: 680px){
+    .personagens img {
+        width: 100px;
+    }
+}
+@media (max-width: 380px){
+   .personagens ul {
+       flex-direction: column;
+       justify-self:flex-end;
+   }
+   .personagens li {
+       font-size: 15px;
+   }
+   h1 {
+       font-size: 20px;
+       margin-top: 20px;
+   }
+   h3 {
+       display: none;
+   }
+   h4 {
+       display: none;
+   }
+   .apresentacao {
+       display: block;
+   }
 }

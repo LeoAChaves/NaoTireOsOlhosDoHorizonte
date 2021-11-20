@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../Images/YouLose.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Bubblegum Sans', cursive;
+    align-items: center;
+}
+body:hover {
+    cursor: default;
+}
+.derrota {
+    margin: 50px;
+    width: 60%;
+    background-color: rgba(221, 180, 127, 0.3);
+    border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.nome {
+    color: blue;
+}
+a {
+    text-decoration: none;
+    color: black;
+    background: radial-gradient(circle, rgba(226,233,148,0.50) 0%, rgba(251,167,62,0.50) 100%);
+    border:rgb(0, 0, 0) solid;
+    padding: 10px;
+    font-size: 20px;
+}
