@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("./Images/background.jpg");
+    background-image: url("./Images/Apresentação1.jpg");
     display: flex;
     flex-direction: column;
     justify-content: space-between;

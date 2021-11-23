@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../../../Images/background.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Bubblegum Sans', cursive;
+    align-items: center;
+}
+body:hover {
+    cursor: default;
+}
+.introFase3 {
+    margin: 50px;
+    width: 60%;
+    background-color: rgba(221, 180, 127, 0.767);
+    border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 22px;
+}
+.introFase3 img {
+    height: 220px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 10px;
+}

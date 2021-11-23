@@ -14,7 +14,7 @@ body {
 body:hover {
     cursor: default;
 }
-.introFase2 {
+.introFase1 {
     margin: 50px;
     width: 60%;
     background-color: rgba(221, 180, 127, 0.767);
@@ -23,31 +23,31 @@ body:hover {
     padding: 20px;
     font-size: 22px;
 }
-.introFase2 img {
+.introFase1 img {
     height: 220px;
     float: left;
     border-radius: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
-.codigo {
-    font-family: 'Estonia', cursive;
-    font-weight: bolder;
-    font-size: 40px;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;  
-    background: radial-gradient(circle, rgba(226,233,148,0.90) 0%, rgba(251,167,62,0.90) 100%);
+.posicionandoNavios {
+    background-color: rgba(221, 180, 127, 0.767);
+    border: rgb(0, 0, 0) 3px dashed;
     border-radius: 20px;
-    padding: 15px;
+    padding: 20px;
+    width: 60%;
 }
-.codigo p {
-    color: rgba(0, 0, 0, 0.205);
+.Navio1 p, .Navio2 p, .Navio3 p {
+    padding: 10px 0;
+    font-size: 25px;
 }
-h2 {
-    color: rgba(0, 0, 0, 0.205);
+.posicoes1, .posicoes2, .posicoes3 {
+    display: flex;
+    justify-content: space-evenly;
 }
+.posicoes1 img, .posicoes2 img, .posicoes3 img {
+    width: 150px;
+}
+
 .dialogo {
     margin: 50px;
     width: 60%;
@@ -74,17 +74,17 @@ h2 {
     display: flex;
     justify-content: space-evenly;
 }
-.responder {
+.selecionar {
     transition: all 0.5s;
 }
-.responder:hover {
-   color: green;
-   border-color: green;
-}
-.dica {
-    transition: all 0.5s;
-}
-.dica:hover {
+.selecionar:hover {
     color: bisque;
     border-color: bisque;
+}
+.concluir{
+    transition: all 0.5s;
+}
+.concluir:hover {
+   color: green;
+   border-color: green;
 }
