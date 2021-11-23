@@ -221,7 +221,7 @@ function atacar () {
 
     var tabuleiroInimigo = Math.floor(Math.random() * 27) + 1
 
-    alert("\nVocê terá 10 ataques.\nCom pelo menos 4 acertos para vencer.\n\nExemplos de coordenadas válidas: 3D, 1E, 5A.")
+    alert("\nVocê terá 10 ataques.\nCom pelo menos 4 acertos para vencer.\n\nExemplos de coordenadas válidas: 3D, 1E, 5A.\n\nCuidado para não colocar coordenadas repetidas!")
     
     var msg = 'Digite uma coordenada para atacar, no modelo "número+letra".\n'
 

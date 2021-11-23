@@ -69,6 +69,6 @@ h1 {
     transition: all 0.5s;
 }
 .atacar:hover {
-   color:blue;
-   border-color:blue;
+   color:red;
+   border-color:red;
 }
