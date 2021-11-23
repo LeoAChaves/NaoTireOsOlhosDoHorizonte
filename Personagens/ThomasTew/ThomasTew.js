@@ -5,7 +5,7 @@ if(!sessionStorage.totalPontos) // se ainda não tiver sessionStorage -> criar
 }
 else // se já tiver sessionStorage
 {
-    if(Number(sessionStorage.totalPontos)<=0) // checar pontos - se Storage < 0 --> inicia novo jogo + 500 pontos
+    if(Number(sessionStorage.totalPontos)<=0) // checar se Storage < 0 --> inicia novo jogo
     {
         setTimeout(() => { alert("\nNovo jogo iniciado.") }, 1000)
         sessionStorage.totalPontos = 500
@@ -13,7 +13,7 @@ else // se já tiver sessionStorage
     setTimeout(() => { alert("\nVocê está com " + pontos + " pontos:\n\nCada dica consome 50 pontos.\nCada resposta errada consome 100 pontos.") }, 1000) // se Storage > 0 --> jogo continua
 }
 
-var pontos = Number(sessionStorage.totalPontos) // só para não precisar escrever todo o storage muitas vezes
+var pontos = Number(sessionStorage.totalPontos)
 
 
 function checarPontos(pontos){
@@ -31,42 +31,42 @@ function thomas1() {
     
     if (resposta1.indexOf("pascoa") >= 0 || resposta1.indexOf("páscoa") >= 0)
     {
-        alert("\nParabéns! Resposta correta!\n\nConcluído com: " + pontos +" pontos")
+        alert("\nParabéns! Resposta correta!\n\nConcluído com: " + pontos + " pontos")
         location.replace(url="../Fase2/Fase2ThomasTew.html")
     }
     else
     {     
         pontos = pontos - 100
         alert("\nResposta errada -100 pontos.\n\nPontos atuais: "+pontos)
-        checarPontos(pontos)
         sessionStorage.totalPontos = pontos
+        checarPontos(pontos)
     }
 }
 
-var dicaUm = 0
+var dicaUm = 3
 
 function dica1() {
-    if (dicaUm<=0)
+    if (dicaUm==3)
     {
         pontos = pontos - 50
-        alert('\nDica (1/3): "estranho poema"\n\n-50 pontos\nPontos atuais: '+ pontos)
-        dicaUm++;
+        alert('\nDica (1/3): \n\n"Com essa tua magia"\n"Parece um paraíso"\n\n-50 pontos\nPontos atuais: '+ pontos)
+        dicaUm--;
         sessionStorage.totalPontos = pontos // atualiza o storage
         checarPontos(pontos)
     }
-    else if (dicaUm<=1)
+    else if (dicaUm==2)
     {
         pontos = pontos - 50
-        alert('\nDica (2/3): "caçador de tesouros"\n\n-50 pontos\nPontos atuais: '+ pontos)
-        dicaUm++;
+        alert('\nDica (2/3): Já abrigou uma civilização muito próspera, mas que, porém sucumbiu ao isolamento e desgaste do solo.\n\n-50 pontos\nPontos atuais: '+ pontos)
+        dicaUm--;
         sessionStorage.totalPontos = pontos // atualiza o storage
         checarPontos(pontos)
     }
-    else if (dicaUm<=2)
+    else if (dicaUm==1)
     {
         pontos = pontos - 50
-        alert('\nDica (3/3): "indício"\n\n-50 pontos\nPontos atuais: '+ pontos)
-        dicaUm++;
+        alert('\nDica (3/3): Conhecida no mundo todo por suas enormes estátuas de pedra.\n\n-50 pontos\nPontos atuais: '+ pontos)
+        dicaUm--;
         sessionStorage.totalPontos = pontos // atualiza o storage
         checarPontos(pontos)
     }
@@ -87,9 +87,9 @@ function thomas2() {
     if (valorX==7 && valorY==10 && valorZ==25)
     {
         alert("\nX - Correto\nY - Correto\nZ - Correto\n\nParabéns! Resposta correta!\n\nConcluído com: "+pontos+" pontos")
-        location.replace(url="../Fase2/Fase2ThomasTew.html")
+        location.replace(url="../Fase3/Fase3ThomasTew.html")
     }
-    else
+    else // mostrar erros e acertos
     {   
         if(valorX==7){
             valorX = "Correto"
@@ -114,18 +114,6 @@ function thomas2() {
         sessionStorage.totalPontos = pontos
         checarPontos(pontos)
     }
-
-
-
-
-
-    // else
-    // {   
-    //     pontos = pontos - 100
-    //     alert("\nResposta errada -100 pontos.\n\nPontos atuais: "+pontos)
-    //     sessionStorage.totalPontos = pontos
-    //     checarPontos(pontos)
-    // }
 }
 
 var dicaDois = 0
@@ -134,7 +122,7 @@ function dica2() {
     if (dicaDois==0)
     {
         pontos = pontos - 50
-        alert('\nDica (1/3):  Y = 3 + X\n\n-50 pontos\nPontos atuais: '+ pontos)
+        alert('\nDica (1/3):  Z - Y = 15\n\n-50 pontos\nPontos atuais: '+ pontos)
         dicaDois++;
         sessionStorage.totalPontos = pontos
         checarPontos(pontos)
@@ -142,7 +130,7 @@ function dica2() {
     else if (dicaDois==1)
     {
         pontos = pontos - 50
-        alert('\nDica (2/3):  Z - 3X = 4\n\n-50 pontos\nPontos atuais: '+ pontos)
+        alert('\nDica (2/3):  X + Y = 17\n\n-50 pontos\nPontos atuais: '+ pontos)
         dicaDois++;
         sessionStorage.totalPontos = pontos
         checarPontos(pontos)
