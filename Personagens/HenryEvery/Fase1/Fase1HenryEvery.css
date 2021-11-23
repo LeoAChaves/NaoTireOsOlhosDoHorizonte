@@ -44,6 +44,9 @@ body:hover {
     display: flex;
     justify-content: space-evenly;
 }
+.posicoes1 p, .posicoes2 p, .posicoes3 p{
+    display: flex;
+}
 .posicoes1 img, .posicoes2 img, .posicoes3 img {
     width: 150px;
 }

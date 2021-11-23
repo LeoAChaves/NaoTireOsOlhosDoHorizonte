@@ -29,3 +29,60 @@ body:hover {
     border-radius: 20px;
     margin-right: 20px;
 }
+.canhoes {
+    margin-top: 50px;
+    background-color: rgba(221, 180, 127, 0.767);
+    border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+}   
+.canhoes p {
+   display: flex;
+   margin: 15px;
+}
+.canhoes img {
+    width: 200px;
+}
+.dialogo {
+    margin: 50px 0;
+    width: 60%;
+    background-color: rgba(221, 180, 127, 0.767);
+    border: rgb(0, 0, 0) 3px dashed;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+.dialogo img {
+    height: 100px;
+    float: right;
+    border-radius: 20px;
+}
+.dialogo button {
+    font-family: 'Bubblegum Sans', cursive;
+    background: radial-gradient(circle, rgba(226,233,148,0.90) 0%, rgba(251,167,62,0.90) 100%);
+    border:rgb(0, 0, 0) solid;
+    padding: 10px;
+    font-size: 20px;
+}
+.botoes {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.responder{
+    transition: all 0.5s;
+}
+.responder:hover {
+   color: green;
+   border-color: green;
+}
+.dica {
+    transition: all 0.5s;
+}
+.dica:hover {
+    color: bisque;
+    border-color: bisque;
+}
