@@ -8,8 +8,6 @@ function checarSelecao (posNavio) {
     }
     else {
         navio++;
-        console.log("cheguei aqui")
-        console.log(navio)
         selecionarPosicoes()
     }
 }
@@ -17,7 +15,6 @@ function checarSelecao (posNavio) {
 function selecionarPosicoes(){
 
     if(navio == 0){
-    console.log(navio)
     var posPrimeiro = prompt("Escolha uma posicao para o PRIMEIRO navio: ").toUpperCase()
     sessionStorage.posicaoPrimeiro = posPrimeiro
     checarSelecao(posPrimeiro)
@@ -53,10 +50,7 @@ function concluirSelecao() {
 var posPrimeiro = sessionStorage.posicaoPrimeiro
 var posSegundo = sessionStorage.posicaoSegundo
 var posTerceiro = sessionStorage.posicaoTerceiro
-
 var img = document.createElement("IMG") // implementa a imagem correspondente ao posicionamento selecionado na fase 1
-img.style.width = "250PX"
-img.style.height = "250px"
 document.getElementById("tabuleiro").appendChild(img)
 
 if(posPrimeiro=="A"){
@@ -214,4 +208,401 @@ function henry2() {
 
 function dica2() {
     alert('\nDica: ')
+}
+
+// ---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---
+
+function atacar () {
+
+    
+    var acertos = 0
+
+    var ataques = []
+
+    var tabuleiroInimigo = Math.floor(Math.random() * 27) + 1
+
+    alert("\nVocê terá 10 ataques.\nCom pelo menos 4 acertos para vencer.\n\nExemplos de coordenadas válidas: 3D, 1E, 5A.")
+    
+    var msg = 'Digite uma coordenada para atacar, no modelo "número+letra".\n'
+
+    for(var i=1; i<=10; i++){
+        
+        coordenada = prompt(msg).toUpperCase()
+
+        //validando coordenada
+
+        if(coordenada!="1A"&&coordenada!="2A"&&coordenada!="3A"&&coordenada!="4A"&&coordenada!="5A"&&coordenada!="1B"&&coordenada!="2B"&&coordenada!="3B"&&coordenada!="4B"&&coordenada!="5B"&&coordenada!="1C"&&coordenada!="2C"&&coordenada!="3C"&&coordenada!="4C"&&coordenada!="5C"&&coordenada!="1D"&&coordenada!="2D"&&coordenada!="3D"&&coordenada!="4D"&&coordenada!="5D"&&coordenada!="1E"&&coordenada!="2E"&&coordenada!="3E"&&coordenada!="4E"&&coordenada!="5E"){
+            alert("Coordenada inválida")
+            i--;
+        }
+
+        //coordenada válida -> avaliar Fogo ou Água
+
+        else{
+            if(tabuleiroInimigo==1){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                } 
+            }
+            else if(tabuleiroInimigo==2){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+            }
+            else if(tabuleiroInimigo==3){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="2B"||coordenada=="3B"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }  
+            }
+            else if(tabuleiroInimigo==4){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }  
+
+            }
+            else if(tabuleiroInimigo==5){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==6){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="2B"||coordenada=="3C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==7){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==8){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==9){
+
+                if(coordenada=="1A"||coordenada=="2A"||coordenada=="3A"||coordenada=="4A"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="2B"||coordenada=="3B"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==10){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==11){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==12){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="2B"||coordenada=="3B"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==13){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==14){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==15){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="2B"||coordenada=="3B"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==16){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==17){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==18){
+
+                if(coordenada=="4A"||coordenada=="4B"||coordenada=="4C"||coordenada=="4D"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="2B"||coordenada=="3B"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==19){
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==20){
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==21){
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="5A"||coordenada=="5B"||coordenada=="5C"||coordenada=="2B"||coordenada=="3B"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==22){
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==23){
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==24){
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="1B"||coordenada=="1C"||coordenada=="1D"||coordenada=="2B"||coordenada=="3B"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==25){
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="4E"||coordenada=="5E"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else if(tabuleiroInimigo==26){
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="2B"||coordenada=="2C"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+            else{
+
+                if(coordenada=="2D"||coordenada=="3D"||coordenada=="4D"||coordenada=="5D"||coordenada=="1E"||coordenada=="2E"||coordenada=="3E"||coordenada=="2B"||coordenada=="3B"){
+                    msg += i + " --- " + coordenada + " --- FOGO!\n"
+                    acertos ++
+                    ataques.push(coordenada)
+                }
+                else{
+                    msg += i + " --- " + coordenada + " --- água.\n"
+                    ataques.push(coordenada)
+                }
+                
+            }
+        }
+    }
+    
+    alert(msg)
+    console.log(ataques)
+    console.log(acertos)
+
+    if((new Set(ataques)).size !== ataques.length){
+        alert("\nOps, você atacou o mesmo lugar mais de uma vez... cuidado, tente novamente")
+    }
+    else{
+        if(acertos>=4){
+            alert('\nVITÓRIA !!!')
+        }
+        else{
+            alert("\nDerrota")
+        }
+    }
 }
