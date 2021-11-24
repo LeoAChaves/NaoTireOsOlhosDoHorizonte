@@ -6,7 +6,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-image: url("../../Images/BlackbeardWin.jpg");
+    background-image: url("../../Images/GovernorWin.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: -95px;
@@ -19,7 +19,7 @@ body {
 body:hover {
     cursor: default;
 }
-.derrota {
+.vitoria {
     margin: 50px;
     width: 60%;
     background-color: rgba(221, 180, 127, 0.3);
@@ -28,6 +28,9 @@ body:hover {
     padding: 20px;
     text-align: center;
     font-size: 25px;
+}
+h3 {
+    font-size: 28px;
 }
 .inimigo {
     color: darkred;

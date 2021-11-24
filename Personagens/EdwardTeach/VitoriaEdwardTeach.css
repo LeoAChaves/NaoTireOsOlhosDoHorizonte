@@ -19,7 +19,7 @@ body {
 body:hover {
     cursor: default;
 }
-.derrota {
+.vitoria {
     margin: 50px;
     width: 60%;
     background-color: rgba(221, 180, 127, 0.3);
@@ -29,11 +29,14 @@ body:hover {
     text-align: center;
     font-size: 25px;
 }
+h3 {
+    font-size: 28px;
+}
 .inimigo {
-    color: darkred;
+    color: darkblue;
 }
 .aliado {
-    color: darkblue;
+    color: darkred;
 }
 .menu {
     text-decoration: none;

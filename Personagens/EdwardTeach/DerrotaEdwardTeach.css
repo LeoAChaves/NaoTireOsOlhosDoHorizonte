@@ -6,10 +6,10 @@
 body {
     height: 100vh;
     width: 100%;
-    background-image: url("../../Images/YouLose.jpg");
+    background-image: url("../../Images/GovernorWin.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: -200px;
+    background-position-y: -95px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,10 +29,13 @@ body:hover {
     text-align: center;
     font-size: 25px;
 }
-.nome {
-    color: red;
+.inimigo {
+    color: darkblue;
 }
-a {
+.aliado {
+    color: darkred;
+}
+.menu {
     text-decoration: none;
     color: black;
     background: radial-gradient(circle, rgba(226,233,148,0.50) 0%, rgba(251,167,62,0.50) 100%);
