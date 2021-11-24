@@ -594,7 +594,7 @@ function atacar () {
     console.log(ataques)
     console.log(acertos)
 
-    if((new Set(ataques)).size !== ataques.length){
+    if((new Set(ataques)).size !== ataques.length){ // checar se tem coordenadas repetidas
         alert("\nOps, você atacou o mesmo lugar mais de uma vez... cuidado, tente novamente")
     }
     else{

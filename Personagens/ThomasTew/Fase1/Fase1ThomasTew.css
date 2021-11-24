@@ -86,13 +86,6 @@ body:hover {
     color: bisque;
     border-color: bisque;
 }
-
-/* .introFase1:hover #dica {
-    color: red;
-}
-.poema:hover #dica {
-    color: red;
-} */
 #dica:hover {
     color: red;
     cursor: crosshair;

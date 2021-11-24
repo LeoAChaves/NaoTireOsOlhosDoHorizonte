@@ -150,3 +150,40 @@ function dica2() {
 }
 
 // ---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---fase3---
+
+function cavar(){
+
+    alert('\nSão 10 locais possíveis para serem escavados.\n\nCada tentativa que falhar, serão descontados 25 pontos.\nAche o tesouro, antes que seus pontos acabem!')
+
+    var tesouro = Math.floor(Math.random() * 10) + 1
+    // var escavar = (pasreInt(prompt('\nDigite um número de 1 à 10, para escavar.')))
+    var msg = ""
+
+    
+    for(var i=1; i<=10 ; i++){
+
+        var escavar = (parseInt(prompt('\nDigite um número de 1 à 10 para escavar.\nPontos restantes: '+ sessionStorage.totalPontos + '\n\n' + msg)))
+
+        if(escavar<1 && escavar>10) // checar validade do numero
+        {
+            alert = ('\nNúmero inválido')
+            i-- // invalida a tentativa
+        }
+        else{ // se for válido, checar se achou o tesouro
+            if(escavar==tesouro){
+                alert('\nTesouro encontrado! VITÓRIA!!\n\nPontuação final: '+ sessionStorage.totalPontos)
+                location.replace(url="../VitoriaThomasTew")
+                break
+            }
+            else{
+                msg += `Tentativa ${i}: cavou o ponto ${escavar} --- sem tesouro\n`
+                sessionStorage.totalPontos -= 25
+                if(sessionStorage.totalPontos<=0){
+                    alert("Seus pontos zeraram.")
+                    location.replace(url="../DerrotaThomasTew.html")
+                    break
+                }
+            }
+        }
+    }
+}
