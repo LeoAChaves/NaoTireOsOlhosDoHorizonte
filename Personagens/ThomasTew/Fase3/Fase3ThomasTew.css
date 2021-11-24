@@ -71,3 +71,41 @@ h1 {
    color: brown;
    border-color: brown;
 }
+@media (max-width: 800px){
+    .mapa img {
+        width: 500px;
+    }
+}
+@media (max-width: 620px){
+    .introFase3 img {
+        height: 150px;
+    }
+}
+@media (max-width: 500px){
+    .mapa img {
+        width: 300px;
+    }
+}
+@media (max-width: 350px){
+    h1 {
+        font-size: 25px;
+    }
+    .introFase3 p {
+        font-size: 20px;
+    }
+    .dialogo p {
+        font-size: 20px;
+    }
+    .botoes button{
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+@media (max-width: 300px){
+    .introFase3 img {
+        height: 100px;
+    }
+    .mapa img {
+        width: 200px;
+    }
+}

@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body { 
     background-image: url("./Images/Apresentação1.jpg");
     display: flex;
     flex-direction: column;
@@ -84,6 +84,9 @@ footer a{
     }
 }
 @media (max-width: 380px){
+    body {
+        height: 140vh;
+    }
    .personagens ul {
        flex-direction: column;
        justify-self:flex-end;
@@ -99,7 +102,7 @@ footer a{
        display: none;
    }
    h4 {
-       display: none;
+       margin-top: 20px;
    }
    .apresentacao {
        display: block;

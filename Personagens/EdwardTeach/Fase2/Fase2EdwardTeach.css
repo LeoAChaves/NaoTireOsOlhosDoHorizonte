@@ -79,3 +79,36 @@ body:hover {
    color: green;
    border-color: green;
 }
+@media (max-width: 800px){
+    .canhoes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 690px){
+    .introFase2 img {
+        height: 150px;
+    }
+}
+@media (max-width: 570px){
+    .introFase2 img {
+        height: 100px;
+    }
+}
+@media (max-width: 520px){
+    .dialogo p,.dialogo button {
+        font-size: 15px;
+    }
+    .dialogo button {
+        padding: 5px;
+    }
+}
+@media (max-width: 360px){
+    #tabuleiro img {
+        height: 150px;
+    }
+    .canhoes img {
+        height: 100px;
+        width: 100px;
+    }
+}

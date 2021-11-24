@@ -72,3 +72,23 @@ h1 {
    color:red;
    border-color:red;
 }
+@media (max-width: 1120px){
+    .batalhaNaval img {
+        height: 180px;
+    }
+}
+@media (max-width: 620px){
+    .batalhaNaval {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .batalhaNaval img {
+        width: 180px;
+    }
+}
+@media (max-width: 500px){
+    h1 {
+        font-size: 20px;
+    }
+}

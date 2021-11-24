@@ -90,3 +90,55 @@ body:hover {
     color: red;
     cursor: crosshair;
 }
+@media (max-width: 1020px){
+    .poema {
+        font-size: 30px;
+    }
+}
+@media (max-width: 780px){
+    .poema {
+        font-size: 25px;
+    }
+}
+@media (max-width: 670px){
+    .poema {
+        display: flex;
+        flex-direction: column;
+    }
+    .direita {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 640px){
+    .introFase1 img {
+        height: 150px;
+    }
+}
+@media (max-width: 490px){
+    .introFase1 img {
+        height: 100px;
+    }
+    .dialogo p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px){
+    .botoes button {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+@media (max-width: 360px){
+    .introFase1 {
+        font-size: 20px;
+    }
+    .poema {
+        font-size: 15px;
+    }
+}
+@media (max-width: 300px){
+    .botoes {
+        display: flex;
+        flex-direction: column;
+    }
+}

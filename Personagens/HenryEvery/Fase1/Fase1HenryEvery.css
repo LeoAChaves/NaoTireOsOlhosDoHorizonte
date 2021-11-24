@@ -91,3 +91,45 @@ body:hover {
    color: green;
    border-color: green;
 }
+@media (max-width: 900px){
+    .posicoes1 img, .posicoes2 img, .posicoes3 img {
+        width: 100px;
+    }
+}
+@media (max-width: 660px){
+    p {
+        font-size: 18px;
+    }
+    .Navio1 p, .Navio2 p, .Navio3 p {
+        font-size: 18px;
+    }
+    .dialogo button {
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 620px){
+    .introFase1 img {
+        height: 150px;
+    }
+    .posicoes1 img, .posicoes2 img, .posicoes3 img {
+        width: 60px;
+    }
+}
+@media (max-width: 540px){
+    .dialogo button {
+        padding: 2px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 460px){
+    .introFase1 img {
+        height: 100px;
+    }
+}
+@media (max-width: 400px){
+    .posicoes1, .posicoes2, .posicoes3 {
+        display: flex;
+        flex-direction: column;
+    }
+}

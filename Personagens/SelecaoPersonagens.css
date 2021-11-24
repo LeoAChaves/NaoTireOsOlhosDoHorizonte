@@ -100,3 +100,13 @@ footer a{
         height: 200%;
     }
 }
+@media (max-width: 400px){
+    .personagemInfo p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 350px){
+    body {
+        height: 120vh;
+    }
+}

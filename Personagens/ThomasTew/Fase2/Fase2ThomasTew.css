@@ -88,3 +88,61 @@ h2 {
     color: bisque;
     border-color: bisque;
 }
+@media (max-width: 1000px){
+    .codigo h2 {
+        font-size: 30px;
+    }
+    .codigo p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 600px){
+    .introFase2 img {
+        height: 180px;
+    }
+    .introFase2 p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 720px){
+    .dialogo p {
+        font-size: 20px;
+    }
+    .botoes button {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+@media (max-width: 520px){
+ .introFase2 p {
+     font-size: 18px;
+ }
+ .introFase2 img {
+     height: 150px;
+ }
+}
+@media (max-width: 450px){
+    .introFase2 img {
+        height: 100px;
+    }
+    .codigo p {
+        font-size: 20px;
+    }
+    .codigo h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 380px){
+    .codigo p {
+        font-size: 15px;
+    }
+    .codigo h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 310px){
+    .botoes {
+        display: flex;
+        flex-direction: column;
+    }
+}
