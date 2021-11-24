@@ -67,7 +67,7 @@ body:hover {
     padding: 10px;
     font-size: 20px;
 }
-.botoes {
+.botao {
     margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -78,11 +78,4 @@ body:hover {
 .responder:hover {
    color: green;
    border-color: green;
-}
-.dica {
-    transition: all 0.5s;
-}
-.dica:hover {
-    color: bisque;
-    border-color: bisque;
 }
