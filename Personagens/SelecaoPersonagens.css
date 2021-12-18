@@ -1,112 +1,112 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-image: url("../Images/background.jpg");
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    font-family: 'Bubblegum Sans', cursive;
-    align-items: center;
+  background-image: url("../Images/background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: "Bubblegum Sans", cursive;
+  align-items: center;
 }
 body:hover {
-    cursor: default;
+  cursor: default;
 }
 h1 {
-    font-family: 'Stalinist One', cursive;
-    font-size: 28px;
-    text-align: center;
+  font-family: "Stalinist One", cursive;
+  font-size: 28px;
+  text-align: center;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
 }
 .personagemInfo {
-    width: 60%;
-    height: 300px;
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 20px;
-    padding: 20px;
+  width: 60%;
+  height: 300px;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 20px;
+  padding: 20px;
 }
 .personagemInfo img {
-    float: left;
-    width: 30%;
-    border-radius: 20px;
-    margin-right: 25px;
+  float: left;
+  width: 30%;
+  border-radius: 20px;
+  margin-right: 25px;
 }
 .personagemInfo p {
-    font-size: 20px;
+  font-size: 20px;
 }
 .botoes {
-    clear: left;
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
+  clear: left;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
 }
 .botoes a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .botoes p {
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 20px;
-    transition: all 1s;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  transition: all 1s;
 }
 .voltar:hover {
-    background-color: rgba(255, 99, 71, 0.767);
+  background-color: rgba(255, 99, 71, 0.767);
 }
 .iniciar:hover {
-    background-color: rgba(34, 139, 34, 0.767);
+  background-color: rgba(34, 139, 34, 0.767);
 }
 footer {
-    background-color: antiquewhite;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    padding-top: 15px;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
 }
-footer a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-@media (max-width: 760px){
-    .personagemInfo {
-        height: auto;
-    }
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-@media (max-width: 540px){
-    h1 {
-        font-size: 20px;
-    }
-    .botoes p {
-        padding: 2px;
-    }
+@media (max-width: 760px) {
+  .personagemInfo {
+    height: auto;
+  }
 }
-@media (max-width: 500px){
-    body {
-        height: 200%;
-    }
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 20px;
+  }
+  .botoes p {
+    padding: 2px;
+  }
 }
-@media (max-width: 400px){
-    .personagemInfo p {
-        font-size: 18px;
-    }
+@media (max-width: 500px) {
+  body {
+    height: 200%;
+  }
 }
-@media (max-width: 350px){
-    body {
-        height: 120vh;
-    }
+@media (max-width: 400px) {
+  .personagemInfo p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 350px) {
+  body {
+    height: 120vh;
+  }
 }

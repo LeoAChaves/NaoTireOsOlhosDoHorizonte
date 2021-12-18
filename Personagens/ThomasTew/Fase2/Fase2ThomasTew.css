@@ -1,148 +1,156 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-image: url("../../../Images/background.jpg");
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-family: 'Bubblegum Sans', cursive;
-    align-items: center;
+  background-image: url("../../../Images/background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Bubblegum Sans", cursive;
+  align-items: center;
 }
 body:hover {
-    cursor: default;
+  cursor: default;
 }
 .introFase2 {
-    margin: 50px;
-    width: 60%;
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 22px;
+  margin: 50px;
+  width: 60%;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 22px;
 }
 .introFase2 img {
-    height: 220px;
-    float: left;
-    border-radius: 20px;
-    margin-right: 10px;
+  height: 220px;
+  float: left;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 .codigo {
-    font-family: 'Estonia', cursive;
-    font-weight: bolder;
-    font-size: 40px;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;  
-    background: radial-gradient(circle, rgba(226,233,148,0.90) 0%, rgba(251,167,62,0.90) 100%);
-    border-radius: 20px;
-    padding: 15px;
+  font-family: "Estonia", cursive;
+  font-weight: bolder;
+  font-size: 40px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: radial-gradient(
+    circle,
+    rgba(226, 233, 148, 0.9) 0%,
+    rgba(251, 167, 62, 0.9) 100%
+  );
+  border-radius: 20px;
+  padding: 15px;
 }
 .codigo p {
-    color: rgba(0, 0, 0, 0.505);
+  color: rgba(0, 0, 0, 0.505);
 }
 h2 {
-    color: rgba(0, 0, 0, 0.505);
+  color: rgba(0, 0, 0, 0.505);
 }
 .dialogo {
-    margin: 50px;
-    width: 60%;
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 30px;
+  margin: 50px;
+  width: 60%;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 30px;
 }
 .dialogo img {
-    height: 100px;
-    float: right;
-    border-radius: 20px;
+  height: 100px;
+  float: right;
+  border-radius: 20px;
 }
 .dialogo button {
-    font-family: 'Bubblegum Sans', cursive;
-    background: radial-gradient(circle, rgba(226,233,148,0.90) 0%, rgba(251,167,62,0.90) 100%);
-    border:rgb(0, 0, 0) solid;
-    padding: 10px;
-    font-size: 20px;
+  font-family: "Bubblegum Sans", cursive;
+  background: radial-gradient(
+    circle,
+    rgba(226, 233, 148, 0.9) 0%,
+    rgba(251, 167, 62, 0.9) 100%
+  );
+  border: rgb(0, 0, 0) solid;
+  padding: 10px;
+  font-size: 20px;
 }
 .botoes {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .responder {
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 .responder:hover {
-   color: green;
-   border-color: green;
+  color: green;
+  border-color: green;
 }
 .dica {
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 .dica:hover {
-    color: bisque;
-    border-color: bisque;
+  color: bisque;
+  border-color: bisque;
 }
-@media (max-width: 1000px){
-    .codigo h2 {
-        font-size: 30px;
-    }
-    .codigo p {
-        font-size: 25px;
-    }
+@media (max-width: 1000px) {
+  .codigo h2 {
+    font-size: 30px;
+  }
+  .codigo p {
+    font-size: 25px;
+  }
 }
-@media (max-width: 600px){
-    .introFase2 img {
-        height: 180px;
-    }
-    .introFase2 p {
-        font-size: 20px;
-    }
+@media (max-width: 600px) {
+  .introFase2 img {
+    height: 180px;
+  }
+  .introFase2 p {
+    font-size: 20px;
+  }
 }
-@media (max-width: 720px){
-    .dialogo p {
-        font-size: 20px;
-    }
-    .botoes button {
-        font-size: 15px;
-        padding: 5px;
-    }
+@media (max-width: 720px) {
+  .dialogo p {
+    font-size: 20px;
+  }
+  .botoes button {
+    font-size: 15px;
+    padding: 5px;
+  }
 }
-@media (max-width: 520px){
- .introFase2 p {
-     font-size: 18px;
- }
- .introFase2 img {
-     height: 150px;
- }
+@media (max-width: 520px) {
+  .introFase2 p {
+    font-size: 18px;
+  }
+  .introFase2 img {
+    height: 150px;
+  }
 }
-@media (max-width: 450px){
-    .introFase2 img {
-        height: 100px;
-    }
-    .codigo p {
-        font-size: 20px;
-    }
-    .codigo h2 {
-        font-size: 25px;
-    }
+@media (max-width: 450px) {
+  .introFase2 img {
+    height: 100px;
+  }
+  .codigo p {
+    font-size: 20px;
+  }
+  .codigo h2 {
+    font-size: 25px;
+  }
 }
-@media (max-width: 380px){
-    .codigo p {
-        font-size: 15px;
-    }
-    .codigo h2 {
-        font-size: 25px;
-    }
+@media (max-width: 380px) {
+  .codigo p {
+    font-size: 15px;
+  }
+  .codigo h2 {
+    font-size: 25px;
+  }
 }
-@media (max-width: 310px){
-    .botoes {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 310px) {
+  .botoes {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -1,111 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-image: url("../../../Images/background.jpg");
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-family: 'Bubblegum Sans', cursive;
-    align-items: center;
+  background-image: url("../../../Images/background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Bubblegum Sans", cursive;
+  align-items: center;
 }
 body:hover {
-    cursor: default;
+  cursor: default;
 }
 h1 {
-    margin-top: 30px;
-    font-family: 'Stalinist One', cursive;
-    font-size: 40px;
+  margin-top: 30px;
+  font-family: "Stalinist One", cursive;
+  font-size: 40px;
 }
 .introFase3 {
-    margin: 50px;
-    width: 60%;
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 22px;
+  margin: 50px;
+  width: 60%;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 22px;
 }
 .introFase3 img {
-    height: 220px;
-    float: left;
-    border-radius: 20px;
-    margin-right: 10px;
+  height: 220px;
+  float: left;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 .mapa img {
-    width: 800px;
-    border-radius: 20px;
+  width: 800px;
+  border-radius: 20px;
 }
 .dialogo {
-    margin: 50px;
-    width: 60%;
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 30px;
+  margin: 50px;
+  width: 60%;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 30px;
 }
 .dialogo img {
-    height: 100px;
-    float: right;
-    border-radius: 20px;
+  height: 100px;
+  float: right;
+  border-radius: 20px;
 }
 .dialogo button {
-    font-family: 'Bubblegum Sans', cursive;
-    background: radial-gradient(circle, rgba(226,233,148,0.90) 0%, rgba(251,167,62,0.90) 100%);
-    border:rgb(0, 0, 0) solid;
-    padding: 10px;
-    font-size: 20px;
+  font-family: "Bubblegum Sans", cursive;
+  background: radial-gradient(
+    circle,
+    rgba(226, 233, 148, 0.9) 0%,
+    rgba(251, 167, 62, 0.9) 100%
+  );
+  border: rgb(0, 0, 0) solid;
+  padding: 10px;
+  font-size: 20px;
 }
 .botoes {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
-.cavar{
-    transition: all 0.5s;
+.cavar {
+  transition: all 0.5s;
 }
 .cavar:hover {
-   color: brown;
-   border-color: brown;
+  color: brown;
+  border-color: brown;
 }
-@media (max-width: 800px){
-    .mapa img {
-        width: 500px;
-    }
+@media (max-width: 800px) {
+  .mapa img {
+    width: 500px;
+  }
 }
-@media (max-width: 620px){
-    .introFase3 img {
-        height: 150px;
-    }
+@media (max-width: 620px) {
+  .introFase3 img {
+    height: 150px;
+  }
 }
-@media (max-width: 500px){
-    .mapa img {
-        width: 300px;
-    }
+@media (max-width: 500px) {
+  .mapa img {
+    width: 300px;
+  }
 }
-@media (max-width: 350px){
-    h1 {
-        font-size: 25px;
-    }
-    .introFase3 p {
-        font-size: 20px;
-    }
-    .dialogo p {
-        font-size: 20px;
-    }
-    .botoes button{
-        font-size: 15px;
-        padding: 5px;
-    }
+@media (max-width: 350px) {
+  h1 {
+    font-size: 25px;
+  }
+  .introFase3 p {
+    font-size: 20px;
+  }
+  .dialogo p {
+    font-size: 20px;
+  }
+  .botoes button {
+    font-size: 15px;
+    padding: 5px;
+  }
 }
-@media (max-width: 300px){
-    .introFase3 img {
-        height: 100px;
-    }
-    .mapa img {
-        width: 200px;
-    }
+@media (max-width: 300px) {
+  .introFase3 img {
+    height: 100px;
+  }
+  .mapa img {
+    width: 200px;
+  }
 }

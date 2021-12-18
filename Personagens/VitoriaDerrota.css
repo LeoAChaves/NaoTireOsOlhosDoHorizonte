@@ -1,27 +1,27 @@
 body {
-    background-color:burlywood;
+  background-color: burlywood;
 }
 /* @media (max-width: 760px){
     background-repeat: repeat-y;
 } */
-@media (max-width: 490px){
-    h1 {
-        font-size: 40px;
-    }
-    h3 {
-        font-size: 20px;
-    }
+@media (max-width: 490px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 }
-@media (max-width: 410px){
-    h1 {
-        font-size: 30px;
-    }
-    h3 {
-        font-size: 15px;
-    }
+@media (max-width: 410px) {
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 15px;
+  }
 }
-@media (max-width: 325px){
-    h1 {
-        font-size: 20px;
-    }
+@media (max-width: 325px) {
+  h1 {
+    font-size: 20px;
+  }
 }

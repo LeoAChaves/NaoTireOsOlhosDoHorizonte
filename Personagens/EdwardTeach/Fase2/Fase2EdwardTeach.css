@@ -1,114 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-image: url("../../../Images/background.jpg");
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-family: 'Bubblegum Sans', cursive;
-    align-items: center;
+  background-image: url("../../../Images/background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Bubblegum Sans", cursive;
+  align-items: center;
 }
 body:hover {
-    cursor: default;
+  cursor: default;
 }
 .introFase2 {
-    margin: 50px;
-    width: 60%;
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 22px;
+  margin: 50px;
+  width: 60%;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 22px;
 }
 .introFase2 img {
-    height: 220px;
-    float: left;
-    border-radius: 20px;
-    margin-right: 20px;
+  height: 220px;
+  float: left;
+  border-radius: 20px;
+  margin-right: 20px;
 }
 .canhoes {
-    margin-top: 50px;
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 22px;
-    display: flex;
-    justify-content: space-around;
-}   
+  margin-top: 50px;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-around;
+}
 .canhoes p {
-   display: flex;
-   margin: 15px;
+  display: flex;
+  margin: 15px;
 }
 .canhoes img {
-    width: 200px;
+  width: 200px;
 }
 .dialogo {
-    margin: 50px 0;
-    width: 60%;
-    background-color: rgba(221, 180, 127, 0.767);
-    border: rgb(0, 0, 0) 3px dashed;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 30px;
+  margin: 50px 0;
+  width: 60%;
+  background-color: rgba(221, 180, 127, 0.767);
+  border: rgb(0, 0, 0) 3px dashed;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 30px;
 }
 .dialogo img {
-    height: 100px;
-    float: right;
-    border-radius: 20px;
+  height: 100px;
+  float: right;
+  border-radius: 20px;
 }
 .dialogo button {
-    font-family: 'Bubblegum Sans', cursive;
-    background: radial-gradient(circle, rgba(226,233,148,0.90) 0%, rgba(251,167,62,0.90) 100%);
-    border:rgb(0, 0, 0) solid;
-    padding: 10px;
-    font-size: 20px;
+  font-family: "Bubblegum Sans", cursive;
+  background: radial-gradient(
+    circle,
+    rgba(226, 233, 148, 0.9) 0%,
+    rgba(251, 167, 62, 0.9) 100%
+  );
+  border: rgb(0, 0, 0) solid;
+  padding: 10px;
+  font-size: 20px;
 }
 .botao {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
-.responder{
-    transition: all 0.5s;
+.responder {
+  transition: all 0.5s;
 }
 .responder:hover {
-   color: green;
-   border-color: green;
+  color: green;
+  border-color: green;
 }
-@media (max-width: 800px){
-    .canhoes {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 800px) {
+  .canhoes {
+    display: flex;
+    flex-direction: column;
+  }
 }
-@media (max-width: 690px){
-    .introFase2 img {
-        height: 150px;
-    }
+@media (max-width: 690px) {
+  .introFase2 img {
+    height: 150px;
+  }
 }
-@media (max-width: 570px){
-    .introFase2 img {
-        height: 100px;
-    }
+@media (max-width: 570px) {
+  .introFase2 img {
+    height: 100px;
+  }
 }
-@media (max-width: 520px){
-    .dialogo p,.dialogo button {
-        font-size: 15px;
-    }
-    .dialogo button {
-        padding: 5px;
-    }
+@media (max-width: 520px) {
+  .dialogo p,
+  .dialogo button {
+    font-size: 15px;
+  }
+  .dialogo button {
+    padding: 5px;
+  }
 }
-@media (max-width: 360px){
-    #tabuleiro img {
-        height: 150px;
-    }
-    .canhoes img {
-        height: 100px;
-        width: 100px;
-    }
+@media (max-width: 360px) {
+  #tabuleiro img {
+    height: 150px;
+  }
+  .canhoes img {
+    height: 100px;
+    width: 100px;
+  }
 }
