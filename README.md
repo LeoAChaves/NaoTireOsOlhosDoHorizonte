@@ -4,7 +4,7 @@
 
 Projeto final de módulo (I) do curso de Web Dev Full Stack da [Resilia Educação](https://www.resilia.com.br/).
 
-Projeto realizado utilizando HTML, CSS e JavaScript.
+Projeto realizado utilizando [HTML](https://html5up.net/), [CSS](https://www.devmedia.com.br/exemplo/documentacao-de-css/56) e [JavaScript](https://www.javascript.com/).
 
 Tema escolhido: Piratas
 
