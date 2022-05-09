@@ -38,3 +38,10 @@ escolhas resultem em "game over" e alguns poucos resultem em um final de sucesso
 <b>Leonardo de Almeida Chaves 💻 </b>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leonardo-chaves-b6544b229/)](https://www.linkedin.com/in/leonardo-chaves-b6544b229/)
+
+---
+
+Crédito
+Imagens: https://www.brendavanvugtart.com/projects
+
+---
